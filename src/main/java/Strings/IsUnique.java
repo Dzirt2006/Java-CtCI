@@ -16,7 +16,6 @@ public class IsUnique {
 			if (!charsMap.containsKey(point))
 				charsMap.put(point, point);
 		}
-
 		return arr.length==charsMap.size();
 	}
 
