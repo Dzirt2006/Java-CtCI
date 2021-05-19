@@ -8,12 +8,13 @@ public class Node {
 		this.val = d;
 	}
 
-	public void addToTail(int d) {
+	public Node addToTail(int d) {
 		Node temp = this;
 		while (temp.next != null) {
 			temp = temp.next;
 		}
 		temp.next = new Node(d);
+		return temp.next;
 	}
 
 	public void printNodes() {
@@ -22,10 +23,10 @@ public class Node {
 			System.out.print(currNode.val);
 			if (currNode.next != null) {
 				System.out.print(" -> ");
-			}else {
+			} else {
 				System.out.println();
 			}
-				
+
 			currNode = currNode.next;
 		}
 	}
