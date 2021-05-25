@@ -31,6 +31,7 @@ public class CycleDetection {
 			}
 			if (i == 5) {
 				tempNode.next = storage;
+				break;
 			}
 		}
 		System.out.println(loopDetector(lList).val);
